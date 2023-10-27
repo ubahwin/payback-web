@@ -2,24 +2,29 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
     <title>Payback</title>
+
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-<h1>Payback</h1>
+<div id="container">
+    <h1>Payback</h1>
 
-<form id="debtForm">
-    <label for="totalDebt">Сумма:</label>
-    <input type="number" id="totalDebt" min="1" required><br><br>
+    <form id="debtForm">
+        <label for="totalDebt">Сумма:</label>
+        <input type="number" id="totalDebt" min="1" required><br><br>
 
-    <label for="numPeople">Количество людей:</label>
-    <input type="number" id="numPeople" min="1" required><br><br>
+        <label for="numPeople">Количество людей:</label>
+        <input type="number" id="numPeople" min="1" required><br><br>
 
-    <input type="submit" value="Рассчитать">
-</form>
+        <input type="submit" value="Рассчитать">
+    </form>
 
-<h2>Результат:</h2>
-<p id="result"></p>
-
+    <h2>Результат:</h2>
+    <p id="result"></p>
+</div>
 <script src="index.js"></script>
 </body>
 </html>
